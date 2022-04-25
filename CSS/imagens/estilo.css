@@ -1,1 +1,18 @@
-body{background-color: chocolate;}
+*{margin: 0; padding:0; box-sizing: border-box; outline:none;}
+
+.principal{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-areas: 'cabecalho formulario'
+                         'principal formulario'
+                         'rodape formulario';
+    height:50vh;
+}
+
+header{background-color: brown; grid-area:cabecalho;}
+main{background-color: red; grid-area: principal;}
+aside{background-color:royalblue; grid-area: formulario;}
+footer{background-color: blueviolet; grid-area: rodape;}
+
+
+
