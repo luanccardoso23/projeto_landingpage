@@ -31,7 +31,7 @@ aside{grid-area: formulario; background-color: #274083; padding-top: 30px; text-
 aside form{width: 90%; padding-top: 30px; margin: 0 auto; display: flex; flex-direction: column; row-gap: 30px ;}
 aside input, select{width: 100%; padding: 15px; font-size: 16px; margin-bottom: 10px; border: none}
 aside input[type=submit]{background-color: #11dd2c; font-weight: bold; padding: 20px 0; cursor:pointer; transition:all 0.2s linear;}
-
+::placeholder{color: #000;}
 /*EFEITOS*/
 form :where(input, select):focus{outline: 3px solid #48a0df;}
 form input[type=submit]:hover{box-shadow: 0 0 10px rgb(127, 200, 230); transition:all 0.2s linear;}
@@ -55,4 +55,10 @@ footer .rodape-conteudo{line-height: 0.7cm;}
     main figure{margin: 0 5%;}
     aside input[type=submit]{font-size: 20px;}
 }
-
+@media screen and (max-width: 750px){
+    main figure{display:none;}
+    main{background: url(../../imagens/livro2.png) #48a0df; background-size: 200px; background-repeat: no-repeat; background-position: center; background-blend-mode: multiply;}
+    main h1, main h3{text-shadow: 2px 1px 2px #000 ;}
+    footer{flex-direction: column;}
+    footer section:nth-child(2){margin-top: 20px;}
+}
